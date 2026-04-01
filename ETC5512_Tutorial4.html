@@ -59,7 +59,26 @@ div.sourceCode
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="ETC5512_Tutorial4_files/libs/clipboard/clipboard.min.js"></script>
@@ -77,10 +96,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </head>
 
-<body class="fullcontent quarto-light">
+<body class="quarto-light">
 
 <div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
-
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#task-1-working-with-figures" id="toc-task-1-working-with-figures" class="nav-link active" data-scroll-target="#task-1-working-with-figures">Task 1: Working with Figures</a></li>
+  <li><a href="#task-2-creating-professional-tables" id="toc-task-2-creating-professional-tables" class="nav-link" data-scroll-target="#task-2-creating-professional-tables">Task 2: Creating Professional Tables</a></li>
+  <li><a href="#task-3-dynamic-cross-referencing" id="toc-task-3-dynamic-cross-referencing" class="nav-link" data-scroll-target="#task-3-dynamic-cross-referencing">Task 3: Dynamic Cross-Referencing</a></li>
+  <li><a href="#extension-academic-referencing" id="toc-extension-academic-referencing" class="nav-link" data-scroll-target="#extension-academic-referencing">Extension: Academic Referencing</a></li>
+  </ul>
+</nav>
+</div>
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
@@ -131,7 +161,6 @@ Figure&nbsp;1: Body mass vs.&nbsp;Flipper length for three penguin species.
 </div>
 </div>
 <p><a href="#fig-penguins-scatter" class="quarto-xref">Figure&nbsp;1</a> illustrates the relationship between body mass and flipper length got different penguin species</p>
-<p>As shown in <a href="#fig-penguins-scatter" class="quarto-xref">Figure&nbsp;1</a>, there is a clear positive correlation between flipper length and body mass. This means when the flipper length increases, the penguins are heavier.</p>
 </section>
 <section id="task-2-creating-professional-tables" class="level1">
 <h1>Task 2: Creating Professional Tables</h1>
@@ -218,13 +247,23 @@ Table&nbsp;1: Mean body mass of penguins by species and sex.
 </div>
 </div>
 <p><a href="#tbl-penguin-summary" class="quarto-xref">Table&nbsp;1</a> summaries the body mass of penguins by species and sex.</p>
-<p>The specific average for each group are detailed in <a href="#tbl-penguin-summary" class="quarto-xref">Table&nbsp;1</a>. Gentoo penguin has the heaviest weight among others for both male and femail, while female Adelie has the lowest weight.</p>
 </section>
 <section id="task-3-dynamic-cross-referencing" class="level1">
 <h1>Task 3: Dynamic Cross-Referencing</h1>
+<p>As shown in <a href="#fig-penguins-scatter" class="quarto-xref">Figure&nbsp;1</a>, there is a clear positive correlation between flipper length and body mass. This means when the flipper length increases, the penguins are heavier.</p>
+</section>
+<section id="extension-academic-referencing" class="level1">
+<h1>Extension: Academic Referencing</h1>
+<p><em>Parenthetical:</em> The data was originally collected by Gorman et al. <span class="citation" data-cites="penguins_data">(<a href="#ref-penguins_data" role="doc-biblioref">Horst et al. 2020</a>)</span></p>
+<p><em>Narrative:</em> <span class="citation" data-cites="penguins_data">Horst et al. (<a href="#ref-penguins_data" role="doc-biblioref">2020</a>)</span> argues that the increase of flipper length can increase the weight of penguins.</p>
+
 </section>
 
-</main>
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-penguins_data" class="csl-entry" role="listitem">
+Horst, Allison Marie, Alison Presmanes Hill, and Kristen B Gorman. 2020. <em>Palmerpenguins: Palmer Archipelago (Antarctica) Penguin Data</em>. <a href="https://doi.org/10.5281/zenodo.3960218">https://doi.org/10.5281/zenodo.3960218</a>.
+</div>
+</div></section></div></main>
 <!-- /main column -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
