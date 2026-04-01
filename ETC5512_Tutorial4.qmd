@@ -4,3 +4,39 @@ date: 1 Apr 2026
 format: html
 ---
 
+# Task 1: Working with Figures
+
+```{r}
+```{r}
+#| label: fig-penguins-scatter
+#| fig-cap: "Body mass vs. Flipper length for three penguin species."
+#| warning: false
+library(ggplot2)
+library(palmerpenguins)
+
+ggplot(penguins, aes(x = flipper_length_mm, y = body_mass_g, color = species)) +
+  geom_point() +
+  theme_minimal()
+```
+
+@fig-penguins-scatter illustrates the relationship bwterrn body mass and flipper length got different penguin species
+
+# Task 2: Creating Professional Tables
+
+```{r}
+```{r}
+#| label: tbl-penguin-summary
+#| tbl-cap: "Mean body mass of penguins by species and sex."
+library(dplyr)
+
+penguins |>
+  filter(!is.na(sex)) |>
+  group_by(species, sex) |>
+  summarise(mean_mass = mean(body_mass_g)) |>
+  knitr::kable()
+```
+
+@tbl-penguin-summary summaries the body mass of penguins by species and sex.
+
+# Task 3: Dynamic Cross-Referencing
+
