@@ -19,7 +19,7 @@ ggplot(penguins, aes(x = flipper_length_mm, y = body_mass_g, color = species)) +
   theme_minimal()
 ```
 
-@fig-penguins-scatter illustrates the relationship bwterrn body mass and flipper length got different penguin species
+@fig-penguins-scatter illustrates the relationship between body mass and flipper length got different penguin species
 
 # Task 2: Creating Professional Tables
 
@@ -39,4 +39,6 @@ penguins |>
 @tbl-penguin-summary summaries the body mass of penguins by species and sex.
 
 # Task 3: Dynamic Cross-Referencing
+As shown in @fig-penguins-scatter, there is a clear positive correlation between flipper length and body mass. This means when the flipper length increases, the penguins are heavier.
 
+The specific average for each group are detailed in @tbl-penguin-summary. Gentoo penguin has the heaviest weight among others for both male and femail, while female Adelie has the lowest weight.
