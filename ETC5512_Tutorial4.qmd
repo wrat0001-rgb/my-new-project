@@ -10,7 +10,6 @@ format:
 # Task 1: Working with Figures
 
 ```{r}
-```{r}
 #| label: fig-penguins-scatter
 #| fig-cap: "Body mass vs. Flipper length for three penguin species."
 #| warning: false
@@ -26,7 +25,6 @@ ggplot(penguins, aes(x = flipper_length_mm, y = body_mass_g, color = species)) +
 
 # Task 2: Creating Professional Tables
 
-```{r}
 ```{r}
 #| label: tbl-penguin-summary
 #| tbl-cap: "Mean body mass of penguins by species and sex."
@@ -49,3 +47,18 @@ As shown in @fig-penguins-scatter, there is a clear positive correlation between
 
 *Narrative:* @penguins_data argues that the increase of flipper length can increase the weight of penguins.
 
+# Note:
+We can use the below link to create the template for bib file
+Ex we can just copy the link of articles and then paste to the site
+<https://zbib.org>
+
+# Add photo 
+![Koala](https://www.wwf.org.uk/sites/default/files/styles/social_share_image/public/2022-05/_WW236934.jpg?itok=OD_YT_by)
+
+```{r}
+#| label: fig-penguin-photo
+#| fig-cap: "Penguin"
+knitr::include_graphics("https://s.france24.com/media/display/544355b0-45df-11f0-9098-005056a97e36/w:980/Part-GTY-GYI0061951038-1-1-0.jpg")
+```
+
+See @fig-penguin-photo for the penguin image.

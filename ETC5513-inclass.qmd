@@ -1,0 +1,6 @@
+---
+title: "ETC5513_inclass coding"
+format: html
+---
+# Week5 (2 Apr 2026)
+## Stashing
