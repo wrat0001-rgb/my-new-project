@@ -3,4 +3,104 @@ title: "ETC5513_inclass coding"
 format: html
 ---
 # Week5 (2 Apr 2026)
-## Stashing
+## Git Stashing
+Stashing saves your unfinished changes temporarily so you can switch tasks without losing work.
+
+stash = save for later
+commit = permanent record
+
+### Core Stash Commands
+`git stash` Save current changes.
+`git stash -u` Include untracked files.
+`git stash apply` Restore changes but keep stash.
+`git stash pop` Restore changes and remove stash.
+
+### Apply vs Pop
+`git stash apply`
+- Restores changes
+- Keeps stash
+Use when: You want to reuse changes multiple times.
+
+`git stash pop`
+- Restores changes
+- Deletes stash
+Use when: You only need the changes once.
+
+### Remark
+- Stash is local
+- Not pushed to GitHub
+- You can create multiple stashes
+- Must manage carefully
+
+## Tracked vs Untracked vs Ignored Files
+Git classifies files into three categories.
+1. Tracked: Files already committed.
+2. Untracked: Files Git does not yet monitor.
+3. Ignored: Files Git intentionally skips.
+
+`.gitignore`
+A file that tells Git: Do not track these files
+
+Example: in `.gitignore`
+*.log
+.Rhistory
+.RData
+.Ruserdata
+
+This means:
+Ignore:
+log files
+R history
+session data
+
+### Creating a .gitignore
+touch .gitignore
+Or create it directly in GitHub.
+
+**Important Rule**
+If a file is already tracked:
+You must untrack it first.
+git rm --cached filename
+
+## Local vs Remote Git Operations
+### Local operations
+git add
+git commit
+
+### Remote operations
+git push
+git pull
+git fetch
+interact with a remote repository
+
+## Forking vs Cloning
+### Fork
+A copy of someone else's repository on your GitHub.
+Purpose:
+- contribute to someone else's project
+- experiment safely
+Fork = Copy on GitHub
+
+### Clone
+A copy of a repository to your computer.
+Purpose:
+Work locally.
+Clone = Copy on your computer
+
+## Pull Requests — Core Collaboration Tool
+Pull requests = A request to merge your changes into another repository.
+
+### Typical pull request workflow
+Step-by-step:
+1. Fork repository
+2. Make changes
+3. Commit changes
+4. Create pull request
+5. Owner reviews
+6. Merge changes
+
+Pull matters because they enable:
+- teamwork
+- code review
+- version control
+- collaboration
